@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <style>
+      .slide {
+        height: 700px;
+        object-fit: cover;
+        object-position: top;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="alert alert-danger">
+            <i class="fa-solid fa-home"></i>
+            Hello San Kyi Tar Pr
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="alert alert-info alert-dismissible fade show">
+            Hello San Kyi Tar Pr
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="alert alert-warning">Hello San Kyi Tar Pr</div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="alert alert-success">Hello San Kyi Tar Pr</div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div>
+      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-outline-danger">Click Me</button>
+      <a href="htpps://google.com" class="btn btn-outline-info">Google Web</a>
+      <a href="htpps://google.com" class="btn btn-info">Google Web</a>
+      <button class="btn btn-sm btn-outline-danger">Click Me</button>
+      <button class="btn btn-outline-info">Click Me</button>
+      <button class="btn btn-lg btn-outline-warning">Click Me</button>
+      <br /><br /><br />
+      <button class="btn btn-outline-danger disabled">Click Me</button>
+
+      <a href="https://youtube.com" class="btn btn-warning disabled">youtube</a>
+      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-outline-danger">Click Me</button>
+      <button class="btn btn-outline-danger active">Click Me</button>
+      <button class="btn btn-outline-danger">Click Me</button>
+      <br /><br />
+      <div class="btn-group">
+        <button class="btn btn-primary">Click Me</button>
+        <button class="btn btn-primary active">Click Me</button>
+        <button class="btn btn-primary">Click Me</button>
+      </div>
+      <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+      <br /><br />
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <br /><br /><br /><br />
+      <ul class="list-group">
+        <li class="list-group-item">Apple</li>
+        <li class="list-group-item active">Apple</li>
+        <li class="list-group-item">Apple</li>
+        <li class="list-group-item">Apple</li>
+      </ul>
+
+      <h4>Clicable List</h4>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action" href="">Google</a>
+        <a class="list-group-item list-group-item-action" href="">youtube</a>
+        <a class="list-group-item list-group-item-action" href="">Facebook</a>
+        <a class="list-group-item list-group-item-action" href="">Igstram</a>
+      </div>
+      <br /><br /><br />
+      <h4>Progress</h4>
+
+      <div class="progress mb-3">
+        <div
+          class="progress-bar progress-bar-striped bg-info"
+          style="width: 40%"
+        >
+          40%
+        </div>
+      </div>
+
+      <div class="progress mb-3">
+        <div
+          class="progress-bar progress-bar-striped bg-warning"
+          style="width: 80%"
+        >
+          80%
+        </div>
+      </div>
+
+      <div class="progress mb-3">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+          style="width: 70%"
+        >
+          70%
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="spinner-border text-primary"></div>
+      <div class="spinner-border text-info"></div>
+      <div class="spinner-border text-success"></div>
+      <div class="spinner-border text-danger"></div>
+      <div class="spinner-grow"></div>
+      <br /><br /><br /><br />
+      <h4>Spiner</h4>
+      <button class="btn btn-primary">
+        <div class="spinner-border-sm spinner-border"></div>
+        Loading...
+      </button>
+      <br /><br /><br /><br /><br />
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+      <div
+        class="modal fade"
+        data-bs-backdrop="static"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                My name is Myat Sithu Aung
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur,
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasExample"
+        role="button"
+        aria-controls="offcanvasExample"
+      >
+        Link with href
+      </a>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        Button with data-bs-target
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            My Offcanvas
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+            <div class="list-group list-group-flush">
+              <a class="list-group-item list-group-item-action" href=""
+                >Google</a
+              >
+              <a class="list-group-item list-group-item-action" href=""
+                >youtube</a
+              >
+              <a class="list-group-item list-group-item-action" href=""
+                >Facebook</a
+              >
+              <a class="list-group-item list-group-item-action" href=""
+                >Igstram</a
+              >
+            </div>
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+      <h4>pengination</h4>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item"><a class=" page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link active" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      <br /><br /><br />
+      <h4>slide show</h4>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">next</span>
+          </button>
+          <div class="carousel-item active">
+            <img src="./img/download (1).jpeg" class="slide d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/download.jpeg" class="slide d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/139778251_221486209611093_3660218549158770638_n.jpg" class="slide d-block w-100" alt="...">
+          </div>
+        </div>
+        
+      </div>
+      
+      </div>
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+    </div>
+  </body>
+</html>
